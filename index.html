@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Signos</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Signos Zodiacales
+          </a>
+        </div>
+      </nav>
+    <center>
+      <h2>Dia</h2>
+      <input type="range" min="1" max="31" value="1" id="dia" class="form-control w-50" oninput="signo()">
+      <div id="vdia">1</div>
+      <h2>Mes</h2>
+      <select name="mes" id="mes" class="form-control " onchange="signo()" >
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Abril">Abril</option>
+        <option value="Mayo">Mayo</option>
+        <option value="Junio">Junio</option>
+        <option value="Julio">Julio</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Septiembre">Septiembre</option>
+        <option value="Octubre">Octubre</option>
+        <option value="Noviembre">Noviembre</option>
+        <option value="Diciembre">Diciembre</option>
+      </select>
+<br><br>
+      <div id="fecha"></div>
+
+      <div id="ima" class="carta"> </div>
+    </center>
+
+    <script src="app.js"></script>
+</body>
+</html>
